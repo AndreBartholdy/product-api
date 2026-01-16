@@ -42,7 +42,7 @@ Campos do produto:
 1. Clonar o projeto:
 
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
+    git clone <https://github.com/AndreBartholdy/product-api>
     cd product-api
     ```
 
@@ -85,13 +85,12 @@ POST /api/products
   "price": 5.50,
   "code": "P002"
 }
+```
 
 ### Listar todos os produtos (GET)
 
-```http
-GET /api/products
-
 ```json
+GET /api/products
 [
   {
     "id": 1,
@@ -108,13 +107,12 @@ GET /api/products
     "createdAt": "2026-01-16T19:05:12.000Z"
   }
 ]
+```
 
 ### Buscar produto por ID (GET)
 
-```http
-GET /api/products/1
-
 ```json
+GET /api/products/1
 {
   "id": 1,
   "name": "Guaraná Zero",
@@ -134,13 +132,13 @@ Content-Type: application/json
   "price": 5.75,
   "code": "P002A"
 }
+```
 
 ### Atualizar produto (PUT)
 
-```http
-PUT /api/products/1
-
 ```json
+PUT /api/products/1
 {
   "message": "Produto deletado com sucesso"
 }
+```
