@@ -120,13 +120,12 @@ GET /api/products/1
   "code": "P002",
   "createdAt": "2026-01-16T19:10:23.000Z"
 }
+```
 
 ### Atualizar produto (PUT)
 
-```http
+```json
 PUT /api/products/1
-Content-Type: application/json
-
 {
   "name": "Guaraná Zero Atualizado",
   "price": 5.75,
@@ -134,10 +133,10 @@ Content-Type: application/json
 }
 ```
 
-### Atualizar produto (PUT)
+### Deletar produto (DELETE)
 
 ```json
-PUT /api/products/1
+DELETE /api/products/1
 {
   "message": "Produto deletado com sucesso"
 }
